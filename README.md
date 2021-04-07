@@ -2,7 +2,7 @@
 
 My name is Ekaterina and I am a student of HackYourFuture Belgium.
 
-## Hi there :blush:*
+## Hi there :blush:
 
 My name is Ekaterina, I live in Belgium, Wallonia region, and I'm currently learning how to code with ***HackYourFuture Belgium***.
 
