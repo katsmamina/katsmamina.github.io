@@ -1,10 +1,10 @@
-*## Welcome to my personal page*
+# Welcome to my personal page
 
 My name is Ekaterina and I am a student of HackYourFuture Belgium.
 
-*## Hi there :blush:*
+## Hi there :blush:*
 
-My name is Ekaterina, I live in the Wallonia region and am currently learning how to code with ***HackYourFuture Belgium***.
+My name is Ekaterina, I live in Belgium, Wallonia region, and I'm currently learning how to code with ***HackYourFuture Belgium***.
 
 Within the next few months, I intend to learn various skills and web development languages. I hope to succeed.
 
