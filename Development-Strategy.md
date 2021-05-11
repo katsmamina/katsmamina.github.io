@@ -12,7 +12,7 @@
 
 ### `type: css` (_label_)
 -  Nav-bar (issue)
-    -  [ ] font Cormorant Garamond
+    - [ ] font Cormorant Garamond
    -  [ ] font-size 24px
    -  [ ] font color #483E58
    -  [ ] underline link effects
@@ -44,7 +44,7 @@
     - [ ] p
 
 -  buttons-homepage (_issue_)
-    -  [ ] button Gallery – brings to the Gallery page
+    - [ ] button Gallery – brings to the Gallery page
     - [ ] button Contact me – brings to the Contact me page
 
 ### `type: css` (_label_)

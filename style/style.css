@@ -1,23 +1,143 @@
+body {
+    background-color: #E4B8B5;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    main {
+        flex-grow: 1;
+    }
+
 header {
-font-size: 24;
-font-family: Cambria, sans-serif;
+    position: fixed;
+    bottom: 90%;
+    width: 100%;
+}
+    
+.header-nav {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.links-nav {
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    text-decoration: none;
+    color: #483E58;
+}
+a:visited {
+    text-decoration: none;
+    color: #483E58;
+}
+
+a:hover {
+
+}
+
+.link-homepage, .link-gallery, .link-contacts, p {
+font-family: 'Cormorant Garamond', serif;
+color: #483E58;
 font-weight: bolder;
 margin: 0 auto;
+padding: 10 10;
 }
 
-body {
-    background-color: seagreen;
+.link-homepage, .link-gallery, .link-contacts {
+    font-size: 20px;
 }
 
-.bio {
-    font-size: 14;
-    font-family: Cambria, sans-serif;
+p {
+    font-size: 16px;  
 }
 
-.photo {
-    width: 40px;
-    height: 40px;
+h1 {
+    color: #483E58;
+    font-weight: bolder;
+    font-size: 64px;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    padding: 80px 0 30px 0;
     margin: 0 auto;
-    border: 5 px groove ivory;
-    border-radius: 50%;
 }
+
+.imgpbuttons-cont {
+    
+}
+
+.imgtext {
+    max-height: 50%;
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.myphoto-img {
+    border-radius: 50%;
+    height: 225px;
+}
+
+.p-homepage {
+    width: auto;
+    max-width: 50%;
+}
+
+.buttons-container {
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    font-size: 14px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    text-decoration: none solid white;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 2%;
+    background-color: white;
+    transition: transform 0.2s;
+    margin: 5px 10px;
+    width: 130px;
+    }
+
+button:hover {
+    box-shadow: 1px 1px 5px #ffffff;
+    color: #ffffff;
+    transform: scale(1.04);
+    }
+
+    footer {
+        position:fixed;
+        top: 92%;
+        height: 50px;
+        width: 100%;
+        background-color: #483E58;
+    }
+    
+
+    .footer-container {
+        width: 20%;
+        text-align: center;
+        display: flex;
+        justify-content: center; 
+        align-content:center;
+        margin: 0 auto;
+        }
+
+        .icon-link1, .icon-link2, .icon-link3 {
+            padding: 0 20px;
+        }
+        
