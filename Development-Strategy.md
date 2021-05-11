@@ -12,7 +12,7 @@
 
 ### `type: css` (_label_)
 -  Nav-bar (issue)
-    -  [ ] font Cormorant Garamond
+    - [ ] font Cormorant Garamond
    -  [ ] font-size 24px
    -  [ ] font color #483E58
    -  [ ] underline link effects
