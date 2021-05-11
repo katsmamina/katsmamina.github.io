@@ -133,10 +133,11 @@ button:hover {
         text-align: center;
         display: flex;
         justify-content: center; 
+        align-content:center;
         margin: 0 auto;
         }
 
         .icon-link1, .icon-link2, .icon-link3 {
-            fill: #E4B8B5;
+            padding: 0 20px;
         }
         
