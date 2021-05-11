@@ -49,15 +49,17 @@ font-family: 'Cormorant Garamond', serif;
 color: #483E58;
 font-weight: bolder;
 margin: 0 auto;
-padding: 10 10;
 }
 
 .link-homepage, .link-gallery, .link-contacts {
-    font-size: 20px;
+    font-size: 16px;
+    padding: 10 40;
 }
 
 p {
-    font-size: 16px;  
+    font-size: 16px;
+    padding: 10 5;
+    max-width: 70%;  
 }
 
 h1 {
@@ -87,7 +89,7 @@ h1 {
     height: 225px;
 }
 
-.p-homepage {
+.p-homepage, {
     width: auto;
     max-width: 50%;
 }
@@ -99,10 +101,11 @@ h1 {
     justify-content: flex-end;
 }
 
-button {
+button, .form-submit {
     font-size: 14px;
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 600;
+    color: #483E58;
     text-decoration: none solid white;
     border-radius: 5px;
     padding: 10px 20px 10px 20px;
@@ -113,11 +116,30 @@ button {
     width: 130px;
     }
 
-button:hover {
+button:hover, .form-submit:hover {
     box-shadow: 1px 1px 5px #ffffff;
-    color: #ffffff;
     transform: scale(1.04);
     }
+
+
+.textandform-cont {
+    max-height: 50%;
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text-contact {
+    width: auto;
+    max-width: 50%;
+}
+
+.form-contact {
+        width: auto;
+        max-width: 50%;
+    }
+
 
     footer {
         position:fixed;
@@ -141,3 +163,6 @@ button:hover {
             padding: 0 20px;
         }
         
+        @media screen {
+            
+        }
