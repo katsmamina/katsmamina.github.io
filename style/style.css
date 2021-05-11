@@ -8,6 +8,11 @@ body {
         flex-grow: 1;
     }
 
+header {
+    position: fixed;
+    bottom: 90%;
+}
+    
 .header-nav {
     width: 30%;
     text-align: center;
@@ -28,7 +33,7 @@ a.links-nav {
     text-decoration: none;
 }
 
-.link-gallery, .link-contacts, p {
+.link-homepage, .link-gallery, .link-contacts, p {
 font-size: 24px;
 font-family: 'Cormorant Garamond', serif;
 color: #483E58;
@@ -62,9 +67,19 @@ h1 {
     width: 25%;
 }
 
-.footer-container {
+footer {
+    position:fixed;
+    top: 92%;
     height: 50px;
     width: 100%;
     background-color: #483E58;
+}
+
+.footer-container {
+width: 20%;
+text-align: center;
+display: flex;
+justify-content: center; 
+margin: 10px 0 0 0;
 }
 
