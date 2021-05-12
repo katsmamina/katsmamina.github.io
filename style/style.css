@@ -1,20 +1,61 @@
+/*general style*/
+:root {
+    --primary-color: #483E58;
+    --second-color: #E4B8B5;
+}
+
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
 body {
-    background-color: #E4B8B5;
+    background-color: var(--second-color);
     width: 100%;
     display: flex;
     flex-direction: column;
     }
     
-    main {
+main {
         flex-grow: 1;
     }
 
-header {
-    position: fixed;
-    bottom: 90%;
+img {
     width: 100%;
 }
-    
+
+h1 {
+    color: var(--primary-color);
+    font-weight: bolder;
+    font-size: 64px;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    padding: 60px 0 30px 0;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 25px;
+    width: 90%; 
+    line-height: 1.2; 
+}
+
+/* header style */
+header {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
 .header-nav {
     width: 50%;
     display: flex;
@@ -31,13 +72,13 @@ header {
     padding: 0;
 }
 
-a:link {
+a:link .l-header {
     text-decoration: none;
     color: #483E58;
 }
 a:visited {
     text-decoration: none;
-    color: #483E58;
+    color: var(--primary-color);
 }
 
 a:hover {
@@ -46,9 +87,8 @@ a:hover {
 
 .link-homepage, .link-gallery, .link-contacts, p {
 font-family: 'Cormorant Garamond', serif;
-color: #483E58;
+color: var(--primary-color);
 font-weight: bolder;
-margin: 0 auto;
 }
 
 .link-homepage, .link-gallery, .link-contacts {
@@ -56,42 +96,29 @@ margin: 0 auto;
     padding: 10 40;
 }
 
-p {
-    font-size: 16px;
-    padding: 10 5;
-    max-width: 70%;  
-}
-
-h1 {
-    color: #483E58;
-    font-weight: bolder;
-    font-size: 64px;
-    font-family: 'Libre Franklin', sans-serif;
-    text-align: center;
-    padding: 80px 0 30px 0;
-    margin: 0 auto;
-}
-
 .imgpbuttons-cont {
     
 }
 
 .imgtext {
-    max-height: 50%;
-    width: 45%;
+    max-height: 300px;
+    width: 500px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+}
+
+.myphoto {
+    width: 225px;
+    height: 225px;
 }
 
 .myphoto-img {
     border-radius: 50%;
-    height: 225px;
 }
 
-.p-homepage, {
-    width: auto;
-    max-width: 50%;
+.p-homepage {
+    width: 50%;
+    margin: 10 25;
 }
 
 .buttons-container {
@@ -105,7 +132,7 @@ button, .form-submit {
     font-size: 14px;
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 600;
-    color: #483E58;
+    color: var(--primary-color);
     text-decoration: none solid white;
     border-radius: 5px;
     padding: 10px 20px 10px 20px;
@@ -121,7 +148,36 @@ button:hover, .form-submit:hover {
     transform: scale(1.04);
     }
 
+/* Gallery page */
 
+.gallery {
+padding-bottom: 30px;
+margin-bottom: 40px;
+}
+
+.gallery-cont {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.painting-img {
+    margin: 30px 20px 5px 20px;
+    height: auto;
+}
+
+.img-description {
+    text-align:center;
+    }
+
+/* Contact me page */
 .textandform-cont {
     max-height: 50%;
     width: 45%;
@@ -140,17 +196,35 @@ button:hover, .form-submit:hover {
         max-width: 50%;
     }
 
-
-    footer {
-        position:fixed;
-        top: 92%;
-        height: 50px;
-        width: 100%;
-        background-color: #483E58;
+    .form-name, .form-email, .form-message {
+        width: 80%;
+        border-color: currentcolor currentcolor var(--primary-color);
+        border-style: none none solid;
+        border-width: medium medium 1px;
+        border-image: none 100% / 1 / 0 stretch;
+        margin: 10px 0px;
+        font-size: 18px;
+        padding: 5px;
+        box-sizing: border-box;
+        color: var(--primary-color);
+        background-color: transparent;
     }
-    
 
-    .footer-container {
+    .form-name:focus, .form-email:focus, .form-message:focus {
+        outline:none;
+    }
+
+    /* Footer styling*/
+    footer {
+        height: 40px;
+        width: 100%;
+        background-color: var(--primary-color);
+        position: fixed;
+        bottom: 0%;
+        overflow: auto;
+    }
+
+    .social-media {
         width: 20%;
         text-align: center;
         display: flex;
@@ -163,6 +237,9 @@ button:hover, .form-submit:hover {
             padding: 0 20px;
         }
         
-        @media screen {
+        /*Responsive design – media queries*/
+
+        /* mobile */
+        @media (max-width: 500px) {
             
         }
