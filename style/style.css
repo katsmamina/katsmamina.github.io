@@ -72,7 +72,7 @@ header {
     padding: 0;
 }
 
-a:link {
+a:link .l-header {
     text-decoration: none;
     color: #483E58;
 }
@@ -114,7 +114,6 @@ font-weight: bolder;
 
 .myphoto-img {
     border-radius: 50%;
-    height: 100%;
 }
 
 .p-homepage {
@@ -150,6 +149,12 @@ button:hover, .form-submit:hover {
     }
 
 /* Gallery page */
+
+.gallery {
+padding-bottom: 30px;
+margin-bottom: 40px;
+}
+
 .gallery-cont {
     margin: 0 auto;
     width: 95%;
@@ -168,12 +173,9 @@ button:hover, .form-submit:hover {
     height: auto;
 }
 
-
-
-
 .img-description {
-    margin: 5px;
-}
+    text-align:center;
+    }
 
 /* Contact me page */
 .textandform-cont {
@@ -208,14 +210,20 @@ button:hover, .form-submit:hover {
         background-color: transparent;
     }
 
+    .form-name:focus, .form-email:focus, .form-message:focus {
+        outline:none;
+    }
+
     /* Footer styling*/
     footer {
-        height: 50px;
+        height: 40px;
         width: 100%;
         background-color: var(--primary-color);
+        position: fixed;
+        bottom: 0%;
         overflow: auto;
     }
-    
+
     .social-media {
         width: 20%;
         text-align: center;
