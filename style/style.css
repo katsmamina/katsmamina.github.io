@@ -1,4 +1,9 @@
 /*general style*/
+:root {
+    --primary-color: #483E58;
+    --second-color: #E4B8B5;
+}
+
 * {
     box-sizing: border-box;
     padding:0;
@@ -6,7 +11,7 @@
 }
 
 body {
-    background-color: #E4B8B5;
+    background-color: var(--second-color);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -21,7 +26,7 @@ img {
 }
 
 h1 {
-    color: #483E58;
+    color: var(--primary-color);
     font-weight: bolder;
     font-size: 64px;
     font-family: 'Libre Franklin', sans-serif;
@@ -73,7 +78,7 @@ a:link {
 }
 a:visited {
     text-decoration: none;
-    color: #483E58;
+    color: var(--primary-color);
 }
 
 a:hover {
@@ -82,7 +87,7 @@ a:hover {
 
 .link-homepage, .link-gallery, .link-contacts, p {
 font-family: 'Cormorant Garamond', serif;
-color: #483E58;
+color: var(--primary-color);
 font-weight: bolder;
 }
 
@@ -128,7 +133,7 @@ button, .form-submit {
     font-size: 14px;
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 600;
-    color: #483E58;
+    color: var(--primary-color);
     text-decoration: none solid white;
     border-radius: 5px;
     padding: 10px 20px 10px 20px;
@@ -145,15 +150,26 @@ button:hover, .form-submit:hover {
     }
 
 /* Gallery page */
-.gallery {
-    display: grid;
-    grid-template: 15px 10fr 15px / 10px 10fr 10px;
+.gallery-cont {
+    margin: 0 auto;
+    width: 95%;
 }
 
-.img1, .img2, .img3, .img4, .img5, .img6 {
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.painting-img {
     margin: 30px 20px 5px 20px;
     height: auto;
 }
+
+
+
 
 .img-description {
     margin: 5px;
@@ -180,7 +196,7 @@ button:hover, .form-submit:hover {
 
     .form-name, .form-email, .form-message {
         width: 80%;
-        border-color: currentcolor currentcolor #483E58;;
+        border-color: currentcolor currentcolor var(--primary-color);
         border-style: none none solid;
         border-width: medium medium 1px;
         border-image: none 100% / 1 / 0 stretch;
@@ -188,20 +204,19 @@ button:hover, .form-submit:hover {
         font-size: 18px;
         padding: 5px;
         box-sizing: border-box;
-        color: #483E58;
+        color: var(--primary-color);
         background-color: transparent;
     }
 
     /* Footer styling*/
     footer {
-        position:fixed;
-        top: 92%;
         height: 50px;
         width: 100%;
-        background-color: #483E58;
+        background-color: var(--primary-color);
+        overflow: auto;
     }
     
-    .footer-container {
+    .social-media {
         width: 20%;
         text-align: center;
         display: flex;
