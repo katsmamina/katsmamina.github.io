@@ -140,6 +140,20 @@ button:hover, .form-submit:hover {
         max-width: 50%;
     }
 
+    .form-name, .form-email, .form-message {
+        width: 80%;
+        border-color: currentcolor currentcolor #483E58;;
+        border-style: none none solid;
+        border-width: medium medium 1px;
+        border-image: none 100% / 1 / 0 stretch;
+        margin: 20px 0px;
+        font-size: 18px;
+        padding: 5px;
+        box-sizing: border-box;
+        color: #483E58;
+        background-color: transparent;
+        outline: currentcolor none medium;
+    }
 
     footer {
         position:fixed;
