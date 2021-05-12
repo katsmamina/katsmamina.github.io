@@ -5,7 +5,6 @@
 }
 
 * {
-    box-sizing: border-box;
     padding:0;
     margin: 0;
 }
@@ -100,11 +99,12 @@ font-weight: bolder;
     
 }
 
-.imgtext {
+.imgtext, .textandform-cont {
     max-height: 300px;
     width: 500px;
     margin: 0 auto;
     display: flex;
+
 }
 
 .myphoto {
@@ -150,11 +150,6 @@ button:hover, .form-submit:hover {
 
 /* Gallery page */
 
-.gallery {
-padding-bottom: 30px;
-margin-bottom: 40px;
-}
-
 .gallery-cont {
     margin: 0 auto;
     width: 95%;
@@ -178,17 +173,14 @@ margin-bottom: 40px;
     }
 
 /* Contact me page */
-.textandform-cont {
-    max-height: 50%;
-    width: 45%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
+.textandform-cont, .gallery, .imgtxtbtns {
+    padding-bottom: 70;
 }
 
 .text-contact {
     width: auto;
     max-width: 50%;
+    padding: 0 20;
 }
 
 .form-contact {
