@@ -173,8 +173,8 @@ button:hover, .form-submit:hover {
     }
 
 /* Contact me page */
-.textandform-cont, .gallery, .imgtxtbtns {
-    padding-bottom: 70;
+.textandform-cont, .gallery, .imgtxtbtns, .cntc-form {
+    padding-bottom: 70px;
 }
 
 .text-contact {
@@ -188,7 +188,7 @@ button:hover, .form-submit:hover {
         max-width: 50%;
     }
 
-    .form-name, .form-email, .form-message {
+    .form-name, .form-email {
         width: 80%;
         border-color: currentcolor currentcolor var(--primary-color);
         border-style: none none solid;
@@ -202,7 +202,21 @@ button:hover, .form-submit:hover {
         background-color: transparent;
     }
 
-    .form-name:focus, .form-email:focus, .form-message:focus {
+textarea {
+    width: 80%;
+    color: var(--primary-color);
+    background-color: transparent;
+    max-height: 90;
+    border-color: currentcolor currentcolor var(--primary-color);
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    border-image: none 100% / 1 / 0 stretch;
+    font-size: 18px;
+    margin-bottom: 10;
+}
+
+
+    .form-name:focus, .form-email:focus, textarea:focus {
         outline:none;
     }
 
