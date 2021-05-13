@@ -14,6 +14,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 0;
     }
     
 main {
@@ -34,7 +35,7 @@ h1 {
     margin: 0 auto;
 }
 
-p {
+.p-bio, .p-contact {
     font-size: 16px;
     margin: 10px 25px;
     width: 90%; 
@@ -81,7 +82,7 @@ a:visited {
 }
 
 a:hover {
-
+    text-decoration: underline;
 }
 
 .link-homepage, .link-gallery, .link-contacts, p {
@@ -95,8 +96,13 @@ font-weight: bolder;
     padding: 10 40;
 }
 
-.imgpbuttons-cont {
-    
+/* Homepage */
+.imgtxtbtns {
+    display: grid;
+    grid-template-columns: repeat (2, 2fr);
+    grid-template-rows: repeat (3, 1fr);
+    width: 50%;
+    margin: 0 auto;
 }
 
 .imgtext, .textandform-cont {
@@ -104,7 +110,6 @@ font-weight: bolder;
     width: 500px;
     margin: 0 auto;
     display: flex;
-
 }
 
 .myphoto {
@@ -121,9 +126,7 @@ font-weight: bolder;
     margin: 10 25;
 }
 
-.buttons-container {
-    width: 45%;
-    margin: 0 auto;
+.btncont2 {
     display: flex;
     justify-content: flex-end;
 }
@@ -135,12 +138,12 @@ button, .form-submit {
     color: var(--primary-color);
     text-decoration: none solid white;
     border-radius: 5px;
-    padding: 10px 20px 10px 20px;
+    padding: 10px;
     margin-bottom: 2%;
     background-color: white;
     transition: transform 0.2s;
     margin: 5px 10px;
-    width: 130px;
+    width: 110px;
     }
 
 button:hover, .form-submit:hover {
@@ -153,23 +156,23 @@ button:hover, .form-submit:hover {
 .gallery-cont {
     margin: 0 auto;
     width: 95%;
-}
-
-.grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat (3, 1fr);
     grid-template-rows: repeat (4, 1fr);
     gap: 20px;
     justify-content: center;
 }
 
 .painting-img {
-    margin: 30px 20px 5px 20px;
     height: auto;
 }
 
-.img-description {
+.img-descr {
     text-align:center;
+    font-size: 16px;
+    margin: 10px 25px; 
+    line-height: 1.2;
+    margin: 10 10;
     }
 
 /* Contact me page */
@@ -214,7 +217,6 @@ textarea {
     font-size: 18px;
     margin-bottom: 10;
 }
-
 
     .form-name:focus, .form-email:focus, textarea:focus {
         outline:none;
