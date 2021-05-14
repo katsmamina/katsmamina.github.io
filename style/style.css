@@ -194,8 +194,10 @@ button:hover,
   justify-content: center;
 }
 
-.painting-img {
-  height: auto;
+.painting-img { /*unify the photo sizes*/
+  height: 300px;
+  width: 300px;
+  border: 2px black solid;
 }
 
 .img-descr {
@@ -205,7 +207,12 @@ button:hover,
   line-height: 1.2;
   margin: 10 10;
 }
-
+/*styling the price*/
+.spd-price {
+  color: green;
+  font-weight:bold; 
+  font-size: 28px;
+}
 /* Contact me page */
 .textandform-cont,
 .gallery,
