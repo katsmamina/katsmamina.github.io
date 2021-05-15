@@ -16,6 +16,6 @@ My main personal values are:
 
 :crystal_ball: integrity
 
-You can also visit my[ LinkedIn profile ](_https://www.linkedin.com/in/ekaterinamamina/_).
+You can also visit my [LinkedIn profile](https://www.linkedin.com/in/ekaterinamamina/).
 
 My personal website is available at https://katsmamina.github.io
