@@ -73,10 +73,11 @@ header {
   padding: 0;
 }
 
-a:link .l-header {
+a:link, .l-header {
   text-decoration: none;
   color: #483e58;
 }
+
 a:visited {
   text-decoration: none;
   color: var(--primary-color);
@@ -154,6 +155,7 @@ button,
   margin: 5px 0px;
   width: 100px;
 }
+
 button {
   font-size: 14px;
   font-family: "Libre Franklin", sans-serif;
