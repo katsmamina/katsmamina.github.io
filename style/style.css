@@ -196,7 +196,7 @@ button:hover,
   justify-content: center;
 }
 
-.painting-img {
+.painting-img { 
   height: auto;
 }
 
@@ -206,6 +206,13 @@ button:hover,
   margin: 10px 25px;
   line-height: 1.2;
   margin: 10 10;
+}
+
+/*styling the price*/
+.spd-price {
+  color: var(--primary-color);
+  font-weight: bold; 
+  font-size: 20px;
 }
 
 /* Contact me page */
