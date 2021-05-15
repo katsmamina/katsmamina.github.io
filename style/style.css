@@ -73,10 +73,11 @@ header {
   padding: 0;
 }
 
-a:link .l-header {
+a:link, .l-header {
   text-decoration: none;
   color: #483e58;
 }
+
 a:visited {
   text-decoration: none;
   color: var(--primary-color);
@@ -89,6 +90,7 @@ a:hover {
 .link-homepage,
 .link-gallery,
 .link-contacts,
+
 p {
   font-family: "Cormorant Garamond", serif;
   color: var(--primary-color);
@@ -154,6 +156,7 @@ button,
   margin: 5px 0px;
   width: 100px;
 }
+
 button {
   font-size: 14px;
   font-family: "Libre Franklin", sans-serif;
@@ -194,10 +197,8 @@ button:hover,
   justify-content: center;
 }
 
-.painting-img { /*unify the photo sizes*/
-  height: 300px;
-  width: 300px;
-  border: 2px black solid;
+.painting-img { 
+  height: auto;
 }
 
 .img-descr {
@@ -207,12 +208,14 @@ button:hover,
   line-height: 1.2;
   margin: 10 10;
 }
+
 /*styling the price*/
 .spd-price {
-  color: green;
-  font-weight:bold; 
-  font-size: 28px;
+  color: var(--primary-color);
+  font-weight: bold; 
+  font-size: 20px;
 }
+
 /* Contact me page */
 .textandform-cont,
 .gallery,
